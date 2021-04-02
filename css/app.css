@@ -6,10 +6,27 @@ body{
     max-width: 1200px; 
     font-family: 'Roboto', sans-serif;
     position: relative;
+    background-image: linear-gradient(#f8f9fa, white);
 }
 
 a{
   text-decoration: none;
+}
+
+.bomnito{
+  width: 150px;
+  font-size: 15px;
+  color: #00b4ff;
+  font-weight: 600;
+}
+
+.bomnito:hover{
+  background-color: lightblue;
+}
+
+.logo{
+  max-width: 350px; 
+  height: 50px;
 }
 
 #brindamos {
@@ -62,7 +79,61 @@ a{
   font-size: 12px; 
   letter-spacing: 0.10em;
 }
+.lesPortadas{
+  height: 450px; 
+  max-height: 450px; 
+  max-width: 450px;
+}
+#seccionMeds, #seccionFarm, #seccionProv {
+  background-color: #ffffff;
+  height: 800px;
+}
+#quieres {
+  color: #808080;
+  font-size:18px;
+}
+.buscadores{
+  color: #808080; 
+  height: 50px;
+}
+.buscadores::placeholder { 
+  color: rgb(206, 206, 206); 
+  font-style: oblique;
+  letter-spacing: 1.5px;
+}
+#verMas > a{
+    width: 300px; 
+    height: 50px; 
+    text-align: center;
+    border-radius: 20px;
+}
+.btnSearch{
+  border-color: #bdbdbd; 
+  border-left: none;
+  height: 50px;
+  width: 50px;
+}
+.btnSearch:hover{
+  border-color: #808080;
+  background-color: #dfe0e0;
+}
+.btnVerMas{
+  border: none;
+  font-weight: 600;
+  background-image: linear-gradient(to right, #00b4ff, #80d9ff);
+  width: 300px;
+  height: 45px;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+
 @media (max-width: 768px){
+    .logo{
+      max-width: 300px; 
+      height: 50px;
+    }
     .linea {
         margin-left: auto;
         margin-right: auto;
@@ -85,25 +156,54 @@ a{
         padding: 0 !important;
       }
     .portadameds{
-        max-height: 400px; 
+        max-height: 300px; 
         min-width: 200px; 
         max-width: 100%;
         margin-top: -10px;
       }
     .QueBuscando{
         color: #808080; 
-        font-size: 24px; 
+        font-size: 22px; 
         font-weight: bold
       }
     #btnsecciones{
         border: none;
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 18px;
         background-image: linear-gradient(to right, #00b4ff, #80d9ff);
         width: 150px;
         height: 35px;
         text-align: center;
       }
-      
+    #quieres {
+        color: #808080;
+        font-size:12px;
+      }
+    .lesPortadas{ 
+        max-height: 300px; 
+        max-width: 350px;
+      }
+    #verMas > a{
+        width: 250px; 
+        height: 40px; 
+        text-align: center;
+        border-radius: 15px;
+    }
+    .btnVerMas{
+      border: none;
+      font-weight: 500;
+      background-image: linear-gradient(to right, #00b4ff, #80d9ff);
+      width: 250px;
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 1.5px;
+    }
+    .buscadores{
+      color: #808080; 
+      width: 230px; 
+      height: 50px
+    } 
 }
 @media (max-width: 575.98px){
     .QueBuscando{
@@ -132,6 +232,41 @@ a{
         font-size: 8px; 
         letter-spacing: 0.10em;
       }
+    .buscadores{
+        color: #808080; 
+        width: 230px; 
+        height: 50px
+      }
+    .btnSearch{
+        border-color: #bdbdbd; 
+        border-left: none;
+        height: 50px;
+        width: 50px;
+      }
+    #verMas > a{
+        width: 160px; 
+        height: 35px; 
+        text-align: center;
+        border-radius: 15px;
+    }
+    .btnVerMas{
+      border: none;
+      font-weight: 400;
+      background-image: linear-gradient(to right, #00b4ff, #80d9ff);
+      width: 160px;
+      height: 35px;
+      text-align: center;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+    .lesPortadas{
+      max-height: 300px; 
+      max-width: 100%;
+    }
+    #quieres {
+      color: #808080;
+      font-size:12px;
+    }
 }
 @media (min-width: 768.1px){
     .tozero {
@@ -141,4 +276,8 @@ a{
         margin: 0;
         padding: 0 !important;
       }
+      .TamForm{
+        width: 550px;
+      }
 }
+
