@@ -22,15 +22,16 @@
     <link rel="stylesheet" href="/justMe/css/normalize.css">
 
 </head>
-<body class="container-fluid bg-light">
+<body class="container-fluid" data-spy="scroll" data-target="#navbarMEDS">
     <div id="empaquetador">
+    
         <section id="seccionPortada" class="vh-100">
 
             <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between">
 
                 <div  class="d-flex flex-column justify-content-lg-start pt-2 m-1">
 
-                    <img src="/justMe/svg/DirectorioDeMedicos.svg" style="max-width: 350px; height: 50px;">
+                    <img src="svg/DirectorioDeMedicos.svg" class="logo">
 
                     <div class="desaparecer container d-flex flex-column paddingBrindamos">
                         <div class="linea desaparecer"></div>
@@ -44,7 +45,7 @@
                 </div>
 
                 <div  class="d-flex justify-content-end pb-2" style="position: relative;">
-                    <img src="/justMe/img/portadameds.png" class="portadameds">
+                    <img src="img/portadameds.png" class="portadameds">
                     <a href="" class="desaparecer" style="position: absolute; right: 20%; font-size: 12px; color: #00b4ff;">¿Quienes somos?</a>
                     <a href="" class="desaparecer" style="position: absolute; right: 5%; font-size: 12px; color: #00b4ff;">Contactanos</a>
                 </div>
@@ -83,8 +84,113 @@
 
             </div>
             </section>
-            <section id="seccionMeds" class="vh-100">
 
+
+            <section id="seccionMeds" class="pt-5 vh-100">
+                <div class="d-flex flex-row justify-content-lg-between">
+                    <div class="">
+                        <img src="svg/portadameds.svg" class="img-fluid lesPortadas">
+                    </div>
+        
+                    <div class="desaparecer">
+                        <img  src="img/seccionMeds.png" class="img-fluid desaparecer" style="height: 350px; max-width: 100%;">
+                    </div>
+                </div>
+                    
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                    <div class="d-flex justify-content-start pt-lg-4">
+                        <div id="verMas">
+                            <a href="#seccionMeds" class="btn btn-primary btn-lg active btnVerMas" role="button" aria-pressed="true">Ver especialidades</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column pt-4">
+                        <div id="quieres" class="d-flex justify-content-center justify-content-lg-start bolder">Escribe la especialidad que requieres:</div>
+                        <form class="form-inline d-flex flex-row justify-content-md-center input-group pt-2 TamForm">
+                            <input class="form-control buscadores" type="search" placeholder="Especialidad" aria-label="Search">
+                            <span class="input-group-addon">
+                                <button class="btn btn-outline-info btnSearch" type="submit">
+                                    <img style="height: 15px;" src="img/lupa.png" alt="">
+                                </button>
+                            </span>
+                            
+                        </form>
+                            
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-5">
+                    <a style="border-radius: 15px; letter-spacing: 0.10em; font-weight:500; font-size: 15px; border: none;width: 150px; height: 35px; background-image: linear-gradient(to right, #00aca2, #00e6da);" href="#" id="" class="btn btn-success" role="button" aria-pressed="true">
+                        <img src="svg/telefono.svg" style="height: 20px" class="pr-3 pb-1"> Asistencia
+                    </a>
+                </div>
+            </section>
+
+            <section id="seccionProv" class="vh-100">
+                <div class="">
+                    <img src="svg/proveedores.svg" class="img-fluid lesPortadas">
+                </div>
+                    
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                    <div class="d-flex justify-content-start pt-lg-4">
+                        <div id="verMas">
+                            <a href="#seccionProv" class="btn btn-primary btn-lg active btnVerMas" role="button" aria-pressed="true">Ver lista completa</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column pt-4">
+                        <div id="quieres" class="d-flex justify-content-center justify-content-lg-start bolder">Escribe el proveedor que requieres:</div>
+                        <form class="form-inline d-flex flex-row justify-content-md-center input-group pt-2 TamForm">
+                            <input class="form-control buscadores" type="search" placeholder="Proveedor" aria-label="Search">
+                            <span class="input-group-addon">
+                                <button class="btn btn-outline-info btnSearch" type="submit">
+                                    <img style="height: 15px;" src="img/lupa.png" alt="">
+                                </button>
+                            </span>
+                            
+                        </form>
+                            
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-5">
+                    <a style="border-radius: 15px; letter-spacing: 0.10em; font-weight:500; font-size: 15px; border: none;width: 150px; height: 35px; background-image: linear-gradient(to right, #00aca2, #00e6da);" href="#" id="" class="btn btn-success" role="button" aria-pressed="true">
+                        <img src="svg/telefono.svg" style="height: 20px" class="pr-3 pb-1"> Asistencia
+                    </a>
+                </div>
+            </section>
+            <section id="seccionFarm" class="vh-100">
+                <div class="d-flex flex-row justify-content-lg-between">
+                    <div class="">
+                        <img src="svg/farmacia.svg" class="img-fluid lesPortadas">
+                    </div>
+        
+                    <div class="desaparecer">
+                        <img  src="img/pildoras.png" class="img-fluid desaparecer" style="height: 350px; max-width: 100%;">
+                    </div>
+                </div>
+                    
+                <div class="d-flex flex-column flex-lg-row justify-content-lg-between">
+                    <div class="d-flex justify-content-start pt-lg-4">
+                        <div id="verMas">
+                            <a href="#seccionFarm" class="btn btn-primary btn-lg active btnVerMas" role="button" aria-pressed="true">Ver lista completa</a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column pt-4">
+                        <div id="quieres" class="d-flex justify-content-center justify-content-lg-start bolder">Escribe la farmacia que requieres:</div>
+                        <form class="form-inline d-flex flex-row justify-content-md-center input-group pt-2 TamForm">
+                            <input class="form-control buscadores" type="search" placeholder="Farmacia" aria-label="Search">
+                            <span class="input-group-addon">
+                                <button class="btn btn-outline-info btnSearch" type="submit">
+                                    <img style="height: 15px;" src="img/lupa.png" alt="">
+                                </button>
+                            </span>
+                            
+                        </form>
+                            
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center pt-5">
+                    <a style="border-radius: 15px; letter-spacing: 0.10em; font-weight:500; font-size: 15px; border: none;width: 150px; height: 35px; background-image: linear-gradient(to right, #00aca2, #00e6da);" href="#" id="" class="btn btn-success" role="button" aria-pressed="true">
+                        <img src="svg/telefono.svg" style="height: 20px" class="pr-3 pb-1"> Asistencia
+                    </a>
+                </div>
             </section>
         </div>
 
