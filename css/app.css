@@ -127,7 +127,9 @@ a{
   font-size: 24px;
   letter-spacing: 1.5px;
 }
-
+.bye{
+  display: none;
+}
 
 @media (max-width: 768px){
     .mediamovil{
@@ -283,4 +285,3 @@ a{
         width: 550px;
       }
 }
-
