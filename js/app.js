@@ -54,3 +54,24 @@ window.onscroll = ()=>{
         navbar.classList.remove("sticky");
     }
 }
+window.addEventListener('scroll', function () {
+  
+  let heightTotal = window.pageYOffset;
+
+  if (heightTotal >=800 && heightTotal <=1600) {
+    btnMeds.classList.add('scrollspy');
+    btnProv.classList.remove('scrollspy');
+    btnFarm.classList.remove('scrollspy');
+  }
+  if (heightTotal >=1601 && heightTotal <=2400) {
+    btnProv.classList.add('scrollspy');
+    btnMeds.classList.remove('scrollspy');
+    btnFarm.classList.remove('scrollspy');
+  }
+  if (heightTotal >=2400) {
+    btnFarm.classList.add('scrollspy');
+    btnProv.classList.remove('scrollspy');
+    btnMeds.classList.remove('scrollspy');
+  }
+  console.log(heightTotal);
+})
