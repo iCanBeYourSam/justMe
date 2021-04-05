@@ -9,7 +9,7 @@ const btnCont = document.querySelector("#Contactanos");
 const btnSom = document.querySelector("#Somos");
 menuBtn.onclick = ()=>{
   navbar.classList.add("show");
-  menuBtn.classList.add("hide");
+  //menuBtn.classList.add("hide");
   body.classList.add("disabled");
 }
 cancelBtn.onclick = ()=>{
@@ -55,23 +55,25 @@ window.onscroll = ()=>{
     }
 }
 window.addEventListener('scroll', function () {
-  
-  let heightTotal = window.pageYOffset;
+  let tamPortada = document.getElementById("seccionPortada").scrollHeight;
+  let tamMedicos = document.getElementById("seccionMeds").scrollHeight;
+  let tamProveedores = document.getElementById("seccionProv").scrollHeight;
+  console.log(tamPortada, tamFarmacia, tamMedicos, tamProveedores);
 
-  if (heightTotal >=800 && heightTotal <=1500) {
+  if (window.pageYOffset >= tamPortada) {
     btnMeds.classList.add('scrollspy');
     btnProv.classList.remove('scrollspy');
     btnFarm.classList.remove('scrollspy');
   }
-  if (heightTotal >=1550 && heightTotal <=2300) {
+  if (window.pageYOffset >= (tamPortada + tamMedicos)) {
     btnProv.classList.add('scrollspy');
     btnMeds.classList.remove('scrollspy');
     btnFarm.classList.remove('scrollspy');
   }
-  if (heightTotal >=2350) {
+  if (window.pageYOffset >= (tamPortada + tamMedicos + tamProveedores)) {
     btnFarm.classList.add('scrollspy');
     btnProv.classList.remove('scrollspy');
     btnMeds.classList.remove('scrollspy');
   }
-  console.log(heightTotal);
+
 })
