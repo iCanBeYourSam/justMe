@@ -58,7 +58,7 @@ window.addEventListener('scroll', function () {
   let tamPortada = document.getElementById("seccionPortada").scrollHeight;
   let tamMedicos = document.getElementById("seccionMeds").scrollHeight;
   let tamProveedores = document.getElementById("seccionProv").scrollHeight;
-  console.log(tamPortada, tamFarmacia, tamMedicos, tamProveedores);
+  console.log(tamPortada, tamMedicos, tamProveedores);
 
   if (window.pageYOffset >= tamPortada) {
     btnMeds.classList.add('scrollspy');
