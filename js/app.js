@@ -68,7 +68,7 @@ window.addEventListener('scroll', function () {
     btnMeds.classList.remove('scrollspy');
     btnFarm.classList.remove('scrollspy');
   }
-  if (heightTotal >=2400) {
+  if (heightTotal >=2350) {
     btnFarm.classList.add('scrollspy');
     btnProv.classList.remove('scrollspy');
     btnMeds.classList.remove('scrollspy');
