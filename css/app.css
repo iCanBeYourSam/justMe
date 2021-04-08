@@ -2,15 +2,22 @@ html {
     scroll-behavior: smooth;
 }
 
+*{
+  font-family: 'Roboto', sans-serif !important;
+}
+
 body{
     max-width: 1200px; 
-    font-family: 'Roboto', sans-serif;
     position: relative;
     background-image: linear-gradient(#f8f9fa, white);
 }
 
 a{
   text-decoration: none;
+}
+
+svg{
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .bomnito{

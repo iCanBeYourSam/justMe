@@ -42,39 +42,4 @@ btnSom.onclick = ()=>{
   navbar.classList.remove("show");
   menuBtn.classList.remove("hide");
 }
-window.onscroll = ()=>{
-    if (this.scrollY > 460) {
-        navbar.classList.remove("bye");
-    } else {
-        navbar.classList.add("bye");
-    }
-    if (this.scrollY > 500) {
-        navbar.classList.add("sticky");  
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
-window.addEventListener('scroll', function () {
-  let tamPortada = document.getElementById("seccionPortada").scrollHeight;
-  let tamMedicos = document.getElementById("seccionMeds").scrollHeight;
-  let tamProveedores = document.getElementById("seccionProv").scrollHeight;
-  let tamFarmacias = document.getElementById("seccionFarm").scrollHeight;
-  console.log(tamPortada, tamMedicos, tamProveedores, tamFarmacias);
-  console.log(window.pageYOffset)
-  if (window.pageYOffset >= tamPortada) {
-    btnMeds.classList.add('scrollspy');
-    btnProv.classList.remove('scrollspy');
-    btnFarm.classList.remove('scrollspy');
-  }
-  if (window.pageYOffset >= (tamPortada + tamMedicos)) {
-    btnProv.classList.add('scrollspy');
-    btnMeds.classList.remove('scrollspy');
-    btnFarm.classList.remove('scrollspy');
-  }
-  if (window.pageYOffset >= (tamPortada + tamMedicos + tamProveedores)) {
-    btnFarm.classList.add('scrollspy');
-    btnProv.classList.remove('scrollspy');
-    btnMeds.classList.remove('scrollspy');
-  }
 
-})
